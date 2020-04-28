@@ -1,0 +1,18 @@
+1.将“丁丁导航.ex4”指标文件拷贝至MT4数据文件夹中的\MQL4\Indicators中。
+
+2.以下代码获取当前k线的数据：
+
+int myvalue1=iCustom (NULL,PERIOD_CURRENT,"丁丁导航","xxx-xxx",0, 0); //窄带上线
+int myvalue2=iCustom (NULL,PERIOD_CURRENT,"丁丁导航","xxx-xxx",1, 0); //窄带中线
+int myvalue3=iCustom (NULL,PERIOD_CURRENT,"丁丁导航","xxx-xxx",2, 0); //窄带下线
+int myvalue4=iCustom (NULL,PERIOD_CURRENT,"丁丁导航","xxx-xxx",3, 0); //宽带上线
+int myvalue5=iCustom (NULL,PERIOD_CURRENT,"丁丁导航","xxx-xxx",4, 0); //宽带中线
+int myvalue6=iCustom (NULL,PERIOD_CURRENT,"丁丁导航","xxx-xxx",5, 0); //宽带下线
+int myvalue7=iCustom (NULL,PERIOD_CURRENT,"丁丁导航","xxx-xxx",6, 0); //涨跌强度
+int myvalue8=iCustom (NULL,PERIOD_CURRENT,"丁丁导航","xxx-xxx",7, 0); //金叉
+int myvalue9=iCustom (NULL,PERIOD_CURRENT,"丁丁导航","xxx-xxx",8, 0); //做多
+int myvalue10=iCustom(NULL,PERIOD_CURRENT,"丁丁导航","xxx-xxx",9, 0); //死叉
+int myvalue11=iCustom(NULL,PERIOD_CURRENT,"丁丁导航","xxx-xxx",10,0); //做空
+
+代码中"xxx-xxx"输入账号授权码。
+代码中最后一项参数0表示获取当前k线数据，输入1表示获取左边第一根k线数据，以此类推。
